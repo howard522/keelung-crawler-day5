@@ -15,7 +15,7 @@ public class KeelungSightsCrawler {
     public Sight[] getItems(String zoneFilter) throws IOException {
     Document doc = Jsoup.connect(BASE_URL)
                         .userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
-                        .timeout(10000)
+                        .timeout(100)
                         .get();
 
     Element guidePoint = doc.getElementById("guide-point");
@@ -35,7 +35,7 @@ public class KeelungSightsCrawler {
             try {
                 Document detailDoc = Jsoup.connect(detailUrl)
                                           .userAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64)")
-                                          .timeout(10000)
+                                          .timeout(100)
                                           .get();
 
                 Sight s = new Sight();
