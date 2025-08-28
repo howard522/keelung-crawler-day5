@@ -9,16 +9,13 @@
     <version>2.7.5</version>
     <relativePath/>
   </parent>
-
   <groupId>com.example</groupId>
   <artifactId>keelung-crawler-api</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
-
   <properties>
     <java.version>1.8</java.version>
   </properties>
-
   <dependencies>
     <!-- Spring Web -->
     <dependency>
@@ -31,8 +28,11 @@
       <artifactId>jsoup</artifactId>
       <version>1.15.3</version>
     </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-mongodb</artifactId>
+    </dependency>
   </dependencies>
-
   <build>
     <plugins>
       <plugin>

@@ -1,5 +1,4 @@
 com\example\crawlerapi\CrawlerApiApplication.class
-com\example\crawlerapi\service\CrawlerService.class
 com\example\crawler\KeelungSightsCrawler.class
 com\example\crawlerapi\controller\SightApiController.class
 com\example\crawler\Sight.class
