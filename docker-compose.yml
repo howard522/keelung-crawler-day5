@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  mongo:
+    image: mongo:7
+    container_name: keelung-mongo
+    ports:
+      - "27017:27017"
+  api:
+    build: .
+    container_name: keelung-api
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/keelung
+      - PORT=8080
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
