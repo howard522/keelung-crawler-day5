@@ -1,4 +1,8 @@
+com\example\crawlerapi\service\SightService.class
 com\example\crawlerapi\CrawlerApiApplication.class
 com\example\crawler\KeelungSightsCrawler.class
-com\example\crawlerapi\controller\SightApiController.class
 com\example\crawler\Sight.class
+com\example\crawlerapi\repo\SightRepository.class
+com\example\crawlerapi\entity\SightEntity.class
+com\example\crawlerapi\startup\DataLoader.class
+com\example\crawlerapi\controller\SightApiController.class
